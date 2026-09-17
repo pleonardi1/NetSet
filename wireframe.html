@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NextSet — Wireframes (Apple)</title>
+  <style>
+    :root {
+      --grouped-bg: #f2f2f7;
+      --surface: #ffffff;
+      --ink: #1c1c1e;
+      --muted: #8e8e93;
+      --separator: #e5e5ea;
+      --blue: #007aff;
+      --blue-pressed: #0051d5;
+      --green: #34c759;
+      --green-bg: rgba(52, 199, 89, 0.12);
+      --red: #ff3b30;
+      --red-bg: rgba(255, 59, 48, 0.12);
+      --yellow-bg: #fff9e6;
+      --input-bg: #f2f2f7;
+      --doc-bg: #e5e5ea;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--doc-bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.35;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .doc-header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 24px 16px;
+    }
+
+    .doc-header h1 {
+      font-size: 34px;
+      font-weight: 700;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .doc-header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 640px;
+    }
+
+    .flow-section {
+      max-width: 1200px;
+      margin: 0 auto 24px;
+      padding: 0 24px;
+    }
+
+    .flow-section h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0 0 12px;
+    }
+
+    .flow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .flow span {
+      background: var(--surface);
+      padding: 8px 14px;
+      border-radius: 999px;
+    }
+
+    .flow .arrow { background: none; padding: 0; }
+
+    .screen-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 24px 64px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      align-items: start;
+    }
+
+    .screen-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .screen-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .screen-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .screen-note {
+      font-size: 15px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .annotation {
+      font-size: 13px;
+      color: var(--muted);
+      border-left: 3px solid var(--blue);
+      padding-left: 10px;
+      margin: 0;
+    }
+
+    /* iPhone frame */
+    .phone {
+      width: 100%;
+      max-width: 390px;
+      min-height: 780px;
+      background: #1c1c1e;
+      border-radius: 44px;
+      padding: 12px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+    }
+
+    .phone-inner {
+      background: var(--grouped-bg);
+      border-radius: 34px;
+      overflow: hidden;
+      min-height: 756px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dynamic-island {
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--grouped-bg);
+    }
+
+    .dynamic-island span {
+      width: 100px;
+      height: 24px;
+      background: #1c1c1e;
+      border-radius: 999px;
+    }
+
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 16px 8px;
+      background: var(--grouped-bg);
+      font-size: 17px;
+    }
+
+    .nav-bar .back {
+      color: var(--blue);
+      font-size: 17px;
+    }
+
+    .nav-bar .action {
+      color: var(--blue);
+      font-size: 17px;
+      font-weight: 400;
+    }
+
+    .nav-bar .title {
+      font-weight: 600;
+      font-size: 17px;
+    }
+
+    .app-body {
+      flex: 1;
+      padding: 0 16px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      overflow: auto;
+    }
+
+    .large-title {
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: var(--muted);
+      margin: 4px 0 0;
+    }
+
+    /* iOS grouped inset list */
+    .group {
+      background: var(--surface);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .group-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      min-height: 44px;
+      border-bottom: 0.5px solid var(--separator);
+      font-size: 17px;
+    }
+
+    .group-row:last-child { border-bottom: none; }
+
+    .group-row .chevron {
+      color: var(--muted);
+      font-size: 20px;
+      margin-left: 8px;
+    }
+
+    .group-row-meta {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .group-section-label {
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      padding: 0 16px 8px;
+      margin: 0;
+    }
+
+    .btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 50px;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: default;
+    }
+
+    .btn-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 44px;
+      background: var(--separator);
+      color: var(--ink);
+      border: none;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: 500;
+      font-family: inherit;
+    }
+
+    .btn-link {
+      background: none;
+      border: none;
+      color: var(--blue);
+      font-size: 17px;
+      font-family: inherit;
+      padding: 8px 0;
+      text-align: left;
+    }
+
+    .exercise-title {
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    .exercise-sub {
+      font-size: 15px;
+      color: var(--muted);
+      margin: 4px 0 0;
+    }
+
+    /* Aim hero — largest on screen, white grouped card */
+    .aim-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    .aim-label {
+      font-size: 15px;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+
+    .aim-value {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0;
+      line-height: 1.15;
+    }
+
+    .aim-why {
+      display: inline-block;
+      margin-top: 14px;
+      color: var(--blue);
+      font-size: 15px;
+    }
+
+    .log-group {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .field input {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      background: var(--input-bg);
+      padding: 14px 12px;
+      font-size: 22px;
+      font-weight: 600;
+      font-family: inherit;
+      color: var(--ink);
+      text-align: center;
+    }
+
+    .error-banner {
+      grid-column: 1 / -1;
+      background: var(--red-bg);
+      color: var(--red);
+      font-size: 15px;
+      padding: 12px 14px;
+      border-radius: 10px;
+    }
+
+    .set-group .group-row.done {
+      color: var(--green);
+    }
+
+    .set-group .group-row.done::before {
+      content: "✓ ";
+      font-weight: 600;
+    }
+
+    .meta-inline {
+      display: flex;
+      gap: 20px;
+      font-size: 15px;
+      color: var(--muted);
+      padding: 0 4px;
+    }
+
+    .meta-inline strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .learning-banner {
+      background: var(--yellow-bg);
+      border-radius: 12px;
+      padding: 16px;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .nav-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 8px;
+    }
+
+    .nav-footer button {
+      background: none;
+      border: none;
+      color: var(--blue);
+      font-size: 17px;
+      font-family: inherit;
+      min-height: 44px;
+      padding: 0 8px;
+    }
+
+    .progress-pill {
+      font-size: 13px;
+      color: var(--muted);
+      background: var(--surface);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .search-field {
+      background: var(--input-bg);
+      border-radius: 10px;
+      padding: 12px 14px;
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 12px;
+    }
+
+    .why-sheet {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .why-sheet p {
+      margin: 6px 0 0;
+      font-size: 15px;
+      color: var(--ink);
+    }
+
+    .pr-highlight {
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    .home-indicator {
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--grouped-bg);
+    }
+
+    .home-indicator span {
+      width: 120px;
+      height: 5px;
+      background: #1c1c1e;
+      border-radius: 999px;
+      opacity: 0.2;
+    }
+  </style>
+</head>
+<body>
+  <header class="doc-header">
+    <h1>NextSet — Wireframes</h1>
+    <p>Apple (iOS-inspired) per <code>DESIGN.md</code>. Grouped gray background, system blue, large aim typography, phone-first.</p>
+  </header>
+
+  <section class="flow-section">
+    <h2>Main flow</h2>
+    <div class="flow">
+      <span>Pick session</span>
+      <span class="arrow">→</span>
+      <span>Exercise</span>
+      <span class="arrow">→</span>
+      <span>Log set</span>
+      <span class="arrow">→</span>
+      <span>Aim updates</span>
+      <span class="arrow">→</span>
+      <span>Next exercise</span>
+    </div>
+  </section>
+
+  <div class="screen-grid">
+
+    <!-- Screen 1 -->
+    <div class="screen-wrap">
+      <p class="screen-label">Screen 1</p>
+      <h2 class="screen-title">Home</h2>
+      <p class="screen-note">Large title + grouped list rows</p>
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="dynamic-island"><span></span></div>
+          <div class="nav-bar">
+            <span></span>
+            <span class="action">History</span>
+          </div>
+          <div class="app-body">
+            <div>
+              <h1 class="large-title">Workouts</h1>
+              <p class="subtitle">Assemble today’s exercises from a saved type</p>
+            </div>
+
+            <div>
+              <p class="group-section-label">Start</p>
+              <div class="group">
+                <div class="group-row">
+                  <div>
+                    <div>Push</div>
+                    <div class="group-row-meta">Bench · OHP · Triceps · Fly</div>
+                  </div>
+                  <span class="chevron">›</span>
+                </div>
+                <div class="group-row">
+                  <div>
+                    <div>Legs</div>
+                    <div class="group-row-meta">Squat · RDL · Leg press · Calf</div>
+                  </div>
+                  <span class="chevron">›</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p class="group-section-label">Recent</p>
+              <div class="group">
+                <div class="group-row">
+                  <span>Push</span>
+                  <span class="group-row-meta">Mon</span>
+                </div>
+                <div class="group-row">
+                  <span>Legs</span>
+                  <span class="group-row-meta">Thu</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn-link">+ New session type (P1)</button>
+          </div>
+          <div class="home-indicator"><span></span></div>
+        </div>
+      </div>
+      <p class="annotation">Tap a row → starts that assembly. Chevron rows like Settings.</p>
+    </div>
+
+    <!-- Screen 2 — core lift screen, Apple hierarchy -->
+    <div class="screen-wrap">
+      <p class="screen-label">Screen 2</p>
+      <h2 class="screen-title">Active session — has history</h2>
+      <p class="screen-note">Aim → log → today → last time / PR</p>
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="dynamic-island"><span></span></div>
+          <div class="nav-bar">
+            <span class="back">‹ Push</span>
+            <span class="action">End</span>
+          </div>
+          <div class="app-body">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start">
+              <div>
+                <h2 class="exercise-title">Bench press</h2>
+                <p class="exercise-sub">Set 4 · target 10 reps</p>
+              </div>
+              <span class="progress-pill">1 of 4</span>
+            </div>
+
+            <!-- 1. Aim hero -->
+            <div class="aim-card">
+              <p class="aim-label">Next set</p>
+              <p class="aim-value">10 reps at 120 lb</p>
+              <span class="aim-why">Why?</span>
+            </div>
+
+            <!-- 2. Log -->
+            <div class="log-group">
+              <div class="field">
+                <label>Weight</label>
+                <input value="120" readonly />
+              </div>
+              <div class="field">
+                <label>Reps</label>
+                <input value="10" readonly />
+              </div>
+              <button class="btn-primary" style="grid-column:1/-1">Log set</button>
+            </div>
+
+            <!-- 3. Today -->
+            <div>
+              <p class="group-section-label">Today</p>
+              <div class="group set-group">
+                <div class="group-row done">90 lb × 10</div>
+                <div class="group-row done">110 lb × 10</div>
+                <div class="group-row done">120 lb × 8</div>
+              </div>
+            </div>
+
+            <!-- 4. Secondary meta -->
+            <div class="meta-inline">
+              <span>Last time <strong>90·110·120×8</strong></span>
+              <span>PR <strong>150 lb</strong></span>
+            </div>
+
+            <div class="nav-footer">
+              <button>‹ Previous</button>
+              <button class="btn-link" style="padding:0">Swap</button>
+              <button>Next ›</button>
+            </div>
+          </div>
+          <div class="home-indicator"><span></span></div>
+        </div>
+      </div>
+      <p class="annotation">Modular: bench history follows the exercise, not the workout template.</p>
+    </div>
+
+    <!-- Screen 3 -->
+    <div class="screen-wrap">
+      <p class="screen-label">Screen 3</p>
+      <h2 class="screen-title">First time on exercise</h2>
+      <p class="screen-note">No aim. Soft learning banner.</p>
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="dynamic-island"><span></span></div>
+          <div class="nav-bar">
+            <span class="back">‹ Push</span>
+            <span class="action">End</span>
+          </div>
+          <div class="app-body">
+            <h2 class="exercise-title">Cable fly</h2>
+            <p class="exercise-sub">Set 1 · target 12 reps</p>
+
+            <div class="learning-banner">
+              First time on this exercise. NextSet is learning your numbers — you’ll get a next-set aim next time.
+            </div>
+
+            <div class="log-group">
+              <div class="field">
+                <label>Weight</label>
+                <input placeholder="—" readonly />
+              </div>
+              <div class="field">
+                <label>Reps</label>
+                <input placeholder="—" readonly />
+              </div>
+              <button class="btn-primary" style="grid-column:1/-1">Log set</button>
+            </div>
+
+            <div class="meta-inline">
+              <span>Last time <strong>—</strong></span>
+              <span>PR <strong>—</strong></span>
+            </div>
+
+            <div class="nav-footer">
+              <button>‹ Previous</button>
+              <button class="btn-link" style="padding:0">Swap</button>
+              <button>Next ›</button>
+            </div>
+          </div>
+          <div class="home-indicator"><span></span></div>
+        </div>
+      </div>
+      <p class="annotation">After swapping in an exercise you’ve never logged.</p>
+    </div>
+
+    <!-- Screen 4 -->
+    <div class="screen-wrap">
+      <p class="screen-label">Screen 4</p>
+      <h2 class="screen-title">Validation error</h2>
+      <p class="screen-note">System red inline — stay on screen</p>
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="dynamic-island"><span></span></div>
+          <div class="nav-bar">
+            <span class="back">‹ Push</span>
+            <span class="action">End</span>
+          </div>
+          <div class="app-body">
+            <h2 class="exercise-title">Bench press</h2>
+
+            <div class="aim-card">
+              <p class="aim-label">Next set</p>
+              <p class="aim-value">10 reps at 120 lb</p>
+            </div>
+
+            <div class="log-group">
+              <div class="field">
+                <label>Weight</label>
+                <input value="" readonly />
+              </div>
+              <div class="field">
+                <label>Reps</label>
+                <input value="0" readonly />
+              </div>
+              <p class="error-banner">Enter weight and reps greater than zero.</p>
+              <button class="btn-primary" style="grid-column:1/-1">Log set</button>
+            </div>
+          </div>
+          <div class="home-indicator"><span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen 5 -->
+    <div class="screen-wrap">
+      <p class="screen-label">Screen 5</p>
+      <h2 class="screen-title">Swap exercise</h2>
+      <p class="screen-note">Grouped picker — this session only</p>
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="dynamic-island"><span></span></div>
+          <div class="nav-bar">
+            <span class="back">Cancel</span>
+            <span class="title">Replace</span>
+            <span class="action">Done</span>
+          </div>
+          <div class="app-body">
+            <p class="subtitle" style="margin:0">Replacing Bench press · today only</p>
+            <div class="search-field">Search exercises</div>
+            <div class="group">
+              <div class="group-row" style="color:var(--blue);font-weight:500">Dumbbell bench press ✓</div>
+              <div class="group-row">Incline bench press</div>
+              <div class="group-row">Machine chest press</div>
+              <div class="group-row">Push-up</div>
+            </div>
+          </div>
+          <div class="home-indicator"><span></span></div>
+        </div>
+      </div>
+      <p class="annotation">Saved Push template unchanged. History follows each exercise ID.</p>
+    </div>
+
+    <!-- Screen 6 -->
+    <div class="screen-wrap">
+      <p class="screen-label">Screen 6</p>
+      <h2 class="screen-title">Why? (P1)</h2>
+      <p class="screen-note">One line, optional</p>
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="dynamic-island"><span></span></div>
+          <div class="nav-bar">
+            <span class="back">‹ Push</span>
+            <span class="action">End</span>
+          </div>
+          <div class="app-body">
+            <div class="aim-card">
+              <p class="aim-label">Next set</p>
+              <p class="aim-value">10 reps at 120 lb</p>
+              <span class="aim-why">Why?</span>
+            </div>
+            <div class="why-sheet">
+              <p class="group-section-label" style="padding:0">Why this aim</p>
+              <p>You hit 8 at 120. Hold weight and chase 10 before going up.</p>
+            </div>
+            <button class="btn-secondary">Close</button>
+          </div>
+          <div class="home-indicator"><span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen 7 -->
+    <div class="screen-wrap">
+      <p class="screen-label">Screen 7</p>
+      <h2 class="screen-title">Session complete</h2>
+      <p class="screen-note">Calm summary</p>
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="dynamic-island"><span></span></div>
+          <div class="nav-bar"><span></span><span></span></div>
+          <div class="app-body" style="justify-content:center;text-align:center;padding-top:48px">
+            <div style="font-size:48px;margin-bottom:12px">✓</div>
+            <h1 class="large-title">Push complete</h1>
+            <p class="subtitle">4 exercises · 14 sets</p>
+            <div class="group" style="margin-top:24px;text-align:left">
+              <div class="group-row">
+                <span>New PR</span>
+                <span class="pr-highlight">125 lb × 10</span>
+              </div>
+              <div class="group-row">
+                <span>Bench press</span>
+              </div>
+            </div>
+            <button class="btn-primary" style="margin-top:24px">Done</button>
+          </div>
+          <div class="home-indicator"><span></span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

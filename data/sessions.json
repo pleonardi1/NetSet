@@ -1,0 +1,47 @@
+[
+  {
+    "id": "seed-push-1",
+    "session_type_id": "type-push",
+    "started_at": "2026-09-10T18:00:00.000Z",
+    "completed_at": "2026-09-10T19:10:00.000Z",
+    "exercise_ids": ["ex-bench", "ex-ohp", "ex-triceps", "ex-fly"],
+    "started_exercise_ids": ["ex-bench", "ex-ohp", "ex-triceps", "ex-fly"],
+    "sets": [
+      { "id": "s1", "exercise_id": "ex-bench", "weight_lb": 90, "reps": 10, "logged_at": "2026-09-10T18:04:00.000Z" },
+      { "id": "s2", "exercise_id": "ex-bench", "weight_lb": 110, "reps": 10, "logged_at": "2026-09-10T18:08:00.000Z" },
+      { "id": "s3", "exercise_id": "ex-bench", "weight_lb": 120, "reps": 8, "logged_at": "2026-09-10T18:12:00.000Z" },
+      { "id": "s4", "exercise_id": "ex-ohp", "weight_lb": 65, "reps": 10, "logged_at": "2026-09-10T18:20:00.000Z" },
+      { "id": "s5", "exercise_id": "ex-ohp", "weight_lb": 75, "reps": 8, "logged_at": "2026-09-10T18:24:00.000Z" },
+      { "id": "s6", "exercise_id": "ex-triceps", "weight_lb": 40, "reps": 12, "logged_at": "2026-09-10T18:35:00.000Z" },
+      { "id": "s7", "exercise_id": "ex-triceps", "weight_lb": 50, "reps": 10, "logged_at": "2026-09-10T18:39:00.000Z" }
+    ]
+  },
+  {
+    "id": "seed-legs-1",
+    "session_type_id": "type-legs",
+    "started_at": "2026-09-12T17:30:00.000Z",
+    "completed_at": "2026-09-12T18:45:00.000Z",
+    "exercise_ids": ["ex-squat", "ex-rdl", "ex-leg-press", "ex-calf"],
+    "started_exercise_ids": ["ex-squat", "ex-rdl", "ex-leg-press", "ex-calf"],
+    "sets": [
+      { "id": "s8", "exercise_id": "ex-squat", "weight_lb": 135, "reps": 8, "logged_at": "2026-09-12T17:35:00.000Z" },
+      { "id": "s9", "exercise_id": "ex-squat", "weight_lb": 185, "reps": 8, "logged_at": "2026-09-12T17:40:00.000Z" },
+      { "id": "s10", "exercise_id": "ex-rdl", "weight_lb": 135, "reps": 10, "logged_at": "2026-09-12T17:55:00.000Z" },
+      { "id": "s11", "exercise_id": "ex-leg-press", "weight_lb": 270, "reps": 12, "logged_at": "2026-09-12T18:10:00.000Z" }
+    ]
+  },
+  {
+    "id": "seed-push-2",
+    "session_type_id": "type-push",
+    "started_at": "2026-09-15T18:00:00.000Z",
+    "completed_at": "2026-09-15T19:00:00.000Z",
+    "exercise_ids": ["ex-bench", "ex-ohp", "ex-triceps", "ex-fly"],
+    "started_exercise_ids": ["ex-bench", "ex-ohp", "ex-triceps", "ex-fly"],
+    "sets": [
+      { "id": "s12", "exercise_id": "ex-bench", "weight_lb": 150, "reps": 10, "logged_at": "2026-09-15T18:05:00.000Z" },
+      { "id": "s13", "exercise_id": "ex-bench", "weight_lb": 170, "reps": 6, "logged_at": "2026-09-15T18:10:00.000Z" },
+      { "id": "s14", "exercise_id": "ex-ohp", "weight_lb": 75, "reps": 10, "logged_at": "2026-09-15T18:25:00.000Z" },
+      { "id": "s15", "exercise_id": "ex-ohp", "weight_lb": 80, "reps": 9, "logged_at": "2026-09-15T18:30:00.000Z" }
+    ]
+  }
+]

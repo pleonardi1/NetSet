@@ -1,0 +1,48 @@
+/*
+  Apple (iOS-inspired) — design tokens for shadcn/ui
+
+  After `npx shadcn@latest init -d`, open app/globals.css and replace the
+  token values inside `:root { ... }` with the block below. Keep the rest
+  of the file (imports, @theme, base layer).
+
+  To change the look later: edit a value here once. Do not hardcode colors
+  in components — use bg-primary, text-muted-foreground, etc.
+*/
+
+:root {
+  --radius: 0.75rem;
+
+  --background: #f2f2f7;
+  --foreground: #1c1c1e;
+
+  --card: #ffffff;
+  --card-foreground: #1c1c1e;
+
+  --popover: #ffffff;
+  --popover-foreground: #1c1c1e;
+
+  --primary: #007aff;
+  --primary-foreground: #ffffff;
+
+  --secondary: #e5e5ea;
+  --secondary-foreground: #1c1c1e;
+
+  --muted: #f2f2f7;
+  --muted-foreground: #8e8e93;
+
+  --accent: #e5e5ea;
+  --accent-foreground: #1c1c1e;
+
+  --destructive: #ff3b30;
+  --destructive-foreground: #ffffff;
+
+  --border: #e5e5ea;
+  --input: #f2f2f7;
+  --ring: #007aff;
+
+  --chart-1: #007aff;
+  --chart-2: #34c759;
+  --chart-3: #8e8e93;
+  --chart-4: #0051d5;
+  --chart-5: #1c1c1e;
+}

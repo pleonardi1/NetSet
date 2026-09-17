@@ -1,0 +1,1444 @@
+[
+  {
+    "id": "ex-barbell-close-grip-bench-press-triceps",
+    "name": "Barbell close-grip bench press (triceps)",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-curl",
+    "name": "Barbell curl",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-drag-curl",
+    "name": "Barbell drag curl",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-jm-press",
+    "name": "Barbell jM press",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-reverse-curl",
+    "name": "Barbell reverse curl",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-skull-crusher",
+    "name": "Skull crusher",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-dip",
+    "name": "Bench dip",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-close-grip-push-up",
+    "name": "Bodyweight close-grip push-up",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-parallel-bar-dip",
+    "name": "Bodyweight parallel bar dip",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-cable-bayesian-curl",
+    "name": "Cable bayesian curl",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-curl",
+    "name": "Cable curl",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-hammer-curl",
+    "name": "Cable hammer curl",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-overhead-rope-extension",
+    "name": "Cable overhead rope extension",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-reverse-curl",
+    "name": "Cable reverse curl",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-rope-pushdown",
+    "name": "Cable rope pushdown",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-single-arm-pushdown",
+    "name": "Cable single-arm pushdown",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-triceps",
+    "name": "Triceps pushdown",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-dumbbell-concentration-curl",
+    "name": "Dumbbell concentration curl",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-cross-body-hammer-curl",
+    "name": "Dumbbell cross-body hammer curl",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-db-curl",
+    "name": "Dumbbell curl",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-kickback",
+    "name": "Dumbbell kickback",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-tate-press",
+    "name": "Dumbbell tate press",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-hammer-curl",
+    "name": "Hammer curl",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-incline-dumbbell-curl",
+    "name": "Incline dumbbell curl",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-overhead-extension",
+    "name": "Overhead triceps extension",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-assisted-dip-machine",
+    "name": "Assisted dip machine",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-bicep-curl-machine",
+    "name": "Bicep curl machine",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-preacher-curl",
+    "name": "Preacher curl machine",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-triceps-dip-machine",
+    "name": "Triceps dip machine",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-triceps-machine",
+    "name": "Triceps extension machine",
+    "target_reps": 12,
+    "body_part": "arms",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-smith-machine-smith-close-grip-bench",
+    "name": "Smith machine smith close-grip bench",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-smith-machine-smith-curl",
+    "name": "Smith machine smith curl",
+    "target_reps": 10,
+    "body_part": "arms",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-barbell-good-morning",
+    "name": "Barbell good morning",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-pendlay-row",
+    "name": "Barbell pendlay row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-rack-pull",
+    "name": "Barbell rack pull",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-row",
+    "name": "Barbell row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-snatch-grip-deadlift",
+    "name": "Barbell snatch-grip deadlift",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-sumo-deadlift",
+    "name": "Barbell sumo deadlift",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-yates-row",
+    "name": "Barbell yates row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-deadlift",
+    "name": "Conventional deadlift",
+    "target_reps": 5,
+    "body_part": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-rdl",
+    "name": "Romanian deadlift",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-t-bar-row",
+    "name": "T-bar row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-bodyweight-australian-pull-up",
+    "name": "Bodyweight australian pull-up",
+    "target_reps": 8,
+    "body_part": "back",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-chin-up",
+    "name": "Bodyweight chin-up",
+    "target_reps": 8,
+    "body_part": "back",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-inverted-row",
+    "name": "Bodyweight inverted row",
+    "target_reps": 8,
+    "body_part": "back",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-neutral-grip-pull-up",
+    "name": "Bodyweight neutral-grip pull-up",
+    "target_reps": 8,
+    "body_part": "back",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-pull-up",
+    "name": "Pull-up",
+    "target_reps": 8,
+    "body_part": "back",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-cable-close-grip-pulldown",
+    "name": "Cable close-grip pulldown",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-deadlift",
+    "name": "Cable deadlift",
+    "target_reps": 12,
+    "body_part": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-kneeling-lat-pulldown",
+    "name": "Cable kneeling lat pulldown",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-shrug",
+    "name": "Cable shrug",
+    "target_reps": 12,
+    "body_part": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-straight-arm-pulldown",
+    "name": "Cable straight-arm pulldown",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-wide-grip-pulldown",
+    "name": "Cable wide-grip pulldown",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-face-pull",
+    "name": "Face pull",
+    "target_reps": 15,
+    "body_part": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-lat-pulldown",
+    "name": "Lat pulldown",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-row",
+    "name": "Seated cable row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-single-arm-cable-row",
+    "name": "Single-arm cable row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-dumbbell-chest-supported-row",
+    "name": "Dumbbell chest-supported row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-kroc-row",
+    "name": "Dumbbell kroc row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-renegade-row",
+    "name": "Dumbbell renegade row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-db-row",
+    "name": "Dumbbell row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-seal-row",
+    "name": "Dumbbell seal row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-back-extension",
+    "name": "Back extension",
+    "target_reps": 12,
+    "body_part": "back",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-lat-pullover-machine",
+    "name": "Lat pullover machine",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-machine-assisted-pull-up",
+    "name": "Machine assisted pull-up",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-machine-hammer-strength-row",
+    "name": "Machine hammer strength row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-machine-iso-lateral-row",
+    "name": "Machine iso-lateral row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-resistance-band-pulldown",
+    "name": "Resistance band pulldown",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-resistance-band-row",
+    "name": "Resistance band row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-smith-machine-smith-bent-over-row",
+    "name": "Smith machine smith bent-over row",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-smith-machine-smith-rack-pull",
+    "name": "Smith machine smith rack pull",
+    "target_reps": 10,
+    "body_part": "back",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-bench",
+    "name": "Barbell bench press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-close-grip-bench-press",
+    "name": "Barbell close-grip bench press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-floor-press",
+    "name": "Barbell floor press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-paused-bench-press",
+    "name": "Barbell paused bench press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-pin-press",
+    "name": "Barbell pin press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-spoto-press",
+    "name": "Barbell spoto press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-wide-grip-bench-press",
+    "name": "Barbell wide-grip bench press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-decline-bench",
+    "name": "Decline bench press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-incline",
+    "name": "Incline bench press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-bodyweight-archer-push-up",
+    "name": "Bodyweight archer push-up",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-decline-push-up",
+    "name": "Bodyweight decline push-up",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-diamond-push-up",
+    "name": "Bodyweight diamond push-up",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-incline-push-up",
+    "name": "Bodyweight incline push-up",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-pushup",
+    "name": "Push-up",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-cable-crossover",
+    "name": "Cable crossover",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-fly",
+    "name": "Cable fly",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-high-cable-fly",
+    "name": "High cable fly",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-low-cable-fly",
+    "name": "Low cable fly",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-single-arm-cable-fly",
+    "name": "Single-arm cable fly",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-db-bench",
+    "name": "Dumbbell bench press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-crush-press",
+    "name": "Dumbbell crush press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-db-fly",
+    "name": "Dumbbell fly",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-pullover",
+    "name": "Dumbbell pullover",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-squeeze-press",
+    "name": "Dumbbell squeeze press",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-svend-press",
+    "name": "Dumbbell svend press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-incline-db",
+    "name": "Incline dumbbell press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-neutral-grip-dumbbell-press",
+    "name": "Neutral-grip dumbbell press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-single-arm-dumbbell-press",
+    "name": "Single-arm dumbbell press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-decline-machine-press",
+    "name": "Decline machine press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-incline-machine-press",
+    "name": "Incline machine press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-chest-press",
+    "name": "Machine chest press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-machine-hammer-strength-chest-press",
+    "name": "Machine hammer strength chest press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-pec-deck",
+    "name": "Pec deck machine",
+    "target_reps": 12,
+    "body_part": "chest",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-resistance-band-fly",
+    "name": "Resistance band fly",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-resistance-band-press",
+    "name": "Resistance band press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-smith-bench",
+    "name": "Smith machine bench press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-smith-machine-smith-decline-press",
+    "name": "Smith machine smith decline press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-smith-machine-smith-incline-press",
+    "name": "Smith machine smith incline press",
+    "target_reps": 10,
+    "body_part": "chest",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-bodyweight-bicycle-crunch",
+    "name": "Bodyweight bicycle crunch",
+    "target_reps": 15,
+    "body_part": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-bird-dog",
+    "name": "Bodyweight bird dog",
+    "target_reps": 15,
+    "body_part": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-dead-bug",
+    "name": "Bodyweight dead bug",
+    "target_reps": 15,
+    "body_part": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-hollow-hold",
+    "name": "Bodyweight hollow hold",
+    "target_reps": 20,
+    "body_part": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-mountain-climber",
+    "name": "Bodyweight mountain climber",
+    "target_reps": 15,
+    "body_part": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-side-plank",
+    "name": "Bodyweight side plank",
+    "target_reps": 20,
+    "body_part": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-superman-hold",
+    "name": "Bodyweight superman hold",
+    "target_reps": 20,
+    "body_part": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-v-up",
+    "name": "Bodyweight v-up",
+    "target_reps": 15,
+    "body_part": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-hanging-leg-raise",
+    "name": "Hanging leg raise",
+    "target_reps": 12,
+    "body_part": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-plank",
+    "name": "Plank",
+    "target_reps": 60,
+    "body_part": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-cable-anti-rotation-hold",
+    "name": "Cable anti-rotation hold",
+    "target_reps": 15,
+    "body_part": "core",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-crunch",
+    "name": "Cable crunch",
+    "target_reps": 15,
+    "body_part": "core",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-wood-chop",
+    "name": "Cable wood chop",
+    "target_reps": 15,
+    "body_part": "core",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-kneeling-cable-crunch",
+    "name": "Kneeling cable crunch",
+    "target_reps": 15,
+    "body_part": "core",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-pallof-press",
+    "name": "Pallof press",
+    "target_reps": 12,
+    "body_part": "core",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-ab-crunch-machine",
+    "name": "Ab crunch machine",
+    "target_reps": 15,
+    "body_part": "core",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-torso-rotation-machine",
+    "name": "Torso rotation machine",
+    "target_reps": 15,
+    "body_part": "core",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-ab-wheel",
+    "name": "Ab wheel rollout",
+    "target_reps": 10,
+    "body_part": "core",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-decline-sit-up",
+    "name": "Decline sit-up",
+    "target_reps": 12,
+    "body_part": "core",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-farmer-carry",
+    "name": "Farmer carry",
+    "target_reps": 12,
+    "body_part": "core",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-medicine-ball-slam",
+    "name": "Medicine ball slam",
+    "target_reps": 12,
+    "body_part": "core",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-squat",
+    "name": "Barbell back squat",
+    "target_reps": 8,
+    "body_part": "legs",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-box-squat",
+    "name": "Barbell box squat",
+    "target_reps": 8,
+    "body_part": "legs",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-glute-bridge",
+    "name": "Barbell glute bridge",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-hip-thrust",
+    "name": "Barbell hip thrust",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-jefferson-squat",
+    "name": "Barbell jefferson squat",
+    "target_reps": 8,
+    "body_part": "legs",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-lunge",
+    "name": "Barbell lunge",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-pause-squat",
+    "name": "Barbell pause squat",
+    "target_reps": 8,
+    "body_part": "legs",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-step-up",
+    "name": "Barbell step-up",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-stiff-leg-deadlift",
+    "name": "Barbell stiff-leg deadlift",
+    "target_reps": 8,
+    "body_part": "legs",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-zercher-squat",
+    "name": "Barbell zercher squat",
+    "target_reps": 8,
+    "body_part": "legs",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-front-squat",
+    "name": "Front squat",
+    "target_reps": 8,
+    "body_part": "legs",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-bodyweight-jump-squat",
+    "name": "Bodyweight jump squat",
+    "target_reps": 15,
+    "body_part": "legs",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-nordic-curl",
+    "name": "Bodyweight nordic curl",
+    "target_reps": 15,
+    "body_part": "legs",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-sissy-squat",
+    "name": "Bodyweight sissy squat",
+    "target_reps": 15,
+    "body_part": "legs",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-squat",
+    "name": "Bodyweight squat",
+    "target_reps": 15,
+    "body_part": "legs",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-cable-kickback",
+    "name": "Cable kickback",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-pull-through",
+    "name": "Cable pull-through",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-step-up",
+    "name": "Cable step-up",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-split-squat",
+    "name": "Bulgarian split squat",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-curtsy-lunge",
+    "name": "Dumbbell curtsy lunge",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-reverse-lunge",
+    "name": "Dumbbell reverse lunge",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-single-leg-rdl",
+    "name": "Dumbbell single-leg RDL",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-step-up",
+    "name": "Dumbbell step-up",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-goblet-squat",
+    "name": "Goblet squat",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-romanian-dumbbell-deadlift",
+    "name": "Romanian dumbbell deadlift",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-lunge",
+    "name": "Walking lunge",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-donkey-calf-raise-machine",
+    "name": "Donkey calf raise machine",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-glute-kickback-machine",
+    "name": "Glute kickback machine",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-hack-squat",
+    "name": "Hack squat machine",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-hip-abduction-machine",
+    "name": "Hip abduction machine",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-hip-adduction-machine",
+    "name": "Hip adduction machine",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-leg-extension",
+    "name": "Leg extension",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-leg-press",
+    "name": "Leg press",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-leg-curl",
+    "name": "Lying leg curl",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-machine-seated-leg-curl",
+    "name": "Machine seated leg curl",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-machine-standing-leg-curl",
+    "name": "Machine standing leg curl",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-seated-calf",
+    "name": "Seated calf raise",
+    "target_reps": 15,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-calf",
+    "name": "Standing calf raise",
+    "target_reps": 15,
+    "body_part": "legs",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-kettlebell-goblet-squat",
+    "name": "Kettlebell goblet squat",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-kettlebell-swing",
+    "name": "Kettlebell swing",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-sled-drag",
+    "name": "Sled drag",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-sled-push",
+    "name": "Sled push",
+    "target_reps": 12,
+    "body_part": "legs",
+    "equipment": "other"
+  },
+  {
+    "id": "ex-smith-machine-smith-calf-raise",
+    "name": "Smith machine smith calf raise",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-smith-machine-smith-lunge",
+    "name": "Smith machine smith lunge",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-smith-machine-smith-split-squat",
+    "name": "Smith machine smith split squat",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-smith-squat",
+    "name": "Smith machine squat",
+    "target_reps": 10,
+    "body_part": "legs",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-barbell-behind-the-neck-press",
+    "name": "Barbell behind-the-neck press",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-landmine-press",
+    "name": "Barbell landmine press",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-ohp",
+    "name": "Barbell overhead press",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-push-press",
+    "name": "Barbell push press",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-shrug",
+    "name": "Barbell shrug",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-barbell-upright-row",
+    "name": "Barbell upright row",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex-bodyweight-handstand-push-up",
+    "name": "Bodyweight handstand push-up",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-bodyweight-pike-push-up",
+    "name": "Bodyweight pike push-up",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex-cable-face-pull-rope",
+    "name": "Cable face pull (rope)",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-front-raise",
+    "name": "Cable front raise",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-lateral",
+    "name": "Cable lateral raise",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-rear-delt-fly",
+    "name": "Cable rear delt fly",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-cable-upright-row",
+    "name": "Cable upright row",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex-dumbbell-arnold-press",
+    "name": "Dumbbell arnold press",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-bent-over-rear-delt-raise",
+    "name": "Dumbbell bent-over rear delt raise",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-front-raise",
+    "name": "Dumbbell front raise",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-incline-lateral-raise",
+    "name": "Dumbbell incline lateral raise",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-lateral-raise",
+    "name": "Dumbbell lateral raise",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-db-shoulder-press",
+    "name": "Dumbbell shoulder press",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-shrug",
+    "name": "Dumbbell shrug",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-upright-row",
+    "name": "Dumbbell upright row",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-w-raise",
+    "name": "Dumbbell w-raise",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-dumbbell-y-raise",
+    "name": "Dumbbell y-raise",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-reverse-fly",
+    "name": "Reverse dumbbell fly",
+    "target_reps": 12,
+    "body_part": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex-lateral-raise-machine",
+    "name": "Lateral raise machine",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-machine-reverse-pec-deck",
+    "name": "Machine reverse pec deck",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-machine-shoulder-press",
+    "name": "Machine shoulder press",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex-smith-ohp",
+    "name": "Smith machine shoulder press",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-smith-machine-smith-push-press",
+    "name": "Smith machine smith push press",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "smith"
+  },
+  {
+    "id": "ex-smith-machine-smith-upright-row",
+    "name": "Smith machine smith upright row",
+    "target_reps": 10,
+    "body_part": "shoulders",
+    "equipment": "smith"
+  }
+]

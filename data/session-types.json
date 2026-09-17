@@ -1,0 +1,12 @@
+[
+  {
+    "id": "type-push",
+    "name": "Push",
+    "exercise_ids": ["ex-bench", "ex-ohp", "ex-triceps", "ex-fly"]
+  },
+  {
+    "id": "type-legs",
+    "name": "Legs",
+    "exercise_ids": ["ex-squat", "ex-rdl", "ex-leg-press", "ex-calf"]
+  }
+]

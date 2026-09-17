@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRD — NextSet</title>
+  <style>
+    :root {
+      --background: #ffffff;
+      --surface: #f8fafc;
+      --foreground: #0f172a;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --success: #15803d;
+      --danger: #b91c1c;
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--foreground);
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+
+    header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+
+    .kicker {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      margin: 0 0 8px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 32px 0 12px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px 0 8px;
+    }
+
+    p, li { margin: 0 0 8px; }
+
+    ul, ol { padding-left: 1.25rem; margin: 0 0 12px; }
+
+    .lede {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+      padding: 16px 20px;
+    }
+
+    .quote {
+      border-left: 3px solid var(--primary);
+      padding-left: 16px;
+      color: var(--foreground);
+      margin: 8px 0 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 12px 0 16px;
+    }
+
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--surface);
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .prio {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+
+    .p0 {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .p1 {
+      background: var(--surface);
+      color: var(--foreground);
+      border: 1px solid var(--border);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0 4px;
+    }
+
+    .note {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    nav.toc a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    nav.toc a:hover { color: var(--primary-hover); }
+
+    nav.toc ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 4px;
+    }
+
+    @media print {
+      .page { padding: 0; max-width: none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <header>
+      <p class="kicker">Product requirements</p>
+      <h1>NextSet</h1>
+      <p class="meta">Author: Paul · Date: 2026-09-17 · Version: 0.1</p>
+    </header>
+
+    <nav class="toc" aria-label="Sections">
+      <ul>
+        <li><a href="#summary">1. Product Summary</a></li>
+        <li><a href="#customer">2. Target Customer</a></li>
+        <li><a href="#problems">3. Customer Problems &amp; the Bet</a></li>
+        <li><a href="#requirements">4. Product Requirements</a></li>
+        <li><a href="#data">5. Data Model</a></li>
+        <li><a href="#ux">6. User Experience</a></li>
+        <li><a href="#stack">7. Tech Stack</a></li>
+        <li><a href="#other">8. Other Info &amp; Open Questions</a></li>
+      </ul>
+    </nav>
+
+    <section id="summary">
+      <h2>1. Product Summary</h2>
+      <div class="lede">
+        <p><strong>One-liner:</strong> For lifters who run different exercises on different days, <strong>NextSet</strong> is a workout log that makes it easy to record what you did, see your progress, and get one clear aim for the next set.</p>
+        <p><strong>TL;DR:</strong> You pick a saved session type (Push, Legs, …), swap exercises if today is different, and log weight × reps on one screen. Each exercise shows last time and a PR (best weight at today’s rep target). After an exercise has been logged once, the app suggests the next set as a single line — e.g. <strong>“10 reps at 90 lb”</strong> — from today’s sets, your history, and a progression calculation. First time on an exercise: no suggestion; it is learning you. <strong>Success = you log a session that way and take the suggested aim on a later set without second-guessing.</strong></p>
+      </div>
+    </section>
+
+    <section id="customer">
+      <h2>2. Target Customer</h2>
+      <ul>
+        <li><strong>User:</strong> A solo lifter (the product owner) who trains with free weights and machines, not a coach managing clients.</li>
+        <li><strong>Buyer / decision-maker:</strong> Same person.</li>
+      </ul>
+      <h3>Top defining attributes</h3>
+      <ol>
+        <li>Mixes session types (push / pull / legs or similar) instead of the same workout every visit <span class="note">(behavioral)</span>.</li>
+        <li>Wants last session’s numbers and a PR while lifting, not a locked 12-week program <span class="note">(needs)</span>.</li>
+        <li>Does not want to decide load from memory or from a generic “always add weight” rule <span class="note">(needs)</span>.</li>
+        <li>Logs on a phone between sets — one glance, one tap <span class="note">(behavioral)</span>.</li>
+        <li>Fine logging alone the first time an exercise appears; expects a target the second time <span class="note">(behavioral)</span>.</li>
+      </ol>
+    </section>
+
+    <section id="problems">
+      <h2>3. Customer Problems &amp; the Bet</h2>
+      <ol>
+        <li class="quote">“I do some exercises one day and different ones another day — other apps assume a fixed routine.”</li>
+        <li class="quote">“I need to know what reps and sets I did last time, and what my PR is for that exercise.”</li>
+        <li class="quote">“If I just hit 8 when it was supposed to be 10, I don’t know whether to stay or keep adding weight — I want one customized aim, not a lecture.”</li>
+      </ol>
+      <p><strong>Riskiest assumption:</strong> A calculated next-set aim (from history + a progression rule) will be trusted enough to follow on the next set, instead of ignored like a generic tip.</p>
+      <p><strong>The bet:</strong> Fast logging plus last time, a target-rep PR, and one next-set line will make this the log they actually use. <strong>We’ll know we’re right if</strong> they complete a session with a swap, log every set, and use the suggested weight/reps on at least one later set.</p>
+    </section>
+
+    <section id="requirements">
+      <h2>4. Product Requirements / Functionality</h2>
+      <h3>Key user stories</h3>
+      <ul>
+        <li>As a lifter, I want to start from a saved session type and swap exercises so today’s mix matches the gym, not a rigid template.</li>
+        <li>As a lifter, I want to log weight and reps in seconds so tracking is easier than a notes app.</li>
+        <li>As a lifter, I want last time and my PR (best weight at this rep target) on the exercise so I can see progress while I lift.</li>
+        <li>As a lifter, I want one next-set aim (“10 reps at 90 lb”) after the app has seen this exercise once so I know what to do next.</li>
+      </ul>
+
+      <h3>Must-haves for v1</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Requirement</th>
+            <th>Priority</th>
+            <th>Acceptance criterion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>R1</td>
+            <td>Seeded session types you can start (at least Push and Legs, each with ≥3 exercises and a rep target per exercise)</td>
+            <td><span class="prio p0">P0</span></td>
+            <td>First visit shows named session types (not a blank page). Starting one opens that exercise list.</td>
+          </tr>
+          <tr>
+            <td>R2</td>
+            <td>Log a set: exercise, weight (lb), reps</td>
+            <td><span class="prio p0">P0</span></td>
+            <td>Submit a valid set → it appears on that exercise within 2s and is still there after refresh.</td>
+          </tr>
+          <tr>
+            <td>R3</td>
+            <td>Reject blank or invalid log (missing weight or reps, or non-positive numbers)</td>
+            <td><span class="prio p0">P0</span></td>
+            <td>Submit with weight or reps blank / ≤0 → inline message; no new set is created.</td>
+          </tr>
+          <tr>
+            <td>R4</td>
+            <td>Swap an exercise on this session only</td>
+            <td><span class="prio p0">P0</span></td>
+            <td>Replace bench with an exercise from the library → the session shows the new name; logged sets stay on the exercise they belong to.</td>
+          </tr>
+          <tr>
+            <td>R5</td>
+            <td>Last time for this exercise (most recent prior session: each set’s weight × reps)</td>
+            <td><span class="prio p0">P0</span></td>
+            <td>On an exercise with seed/history, last session’s sets are visible before you log today. Exercise with no history: “No previous session yet.”</td>
+          </tr>
+          <tr>
+            <td>R6</td>
+            <td>PR = heaviest weight logged for this exercise where reps ≥ today’s target reps</td>
+            <td><span class="prio p0">P0</span></td>
+            <td>After a heavier qualifying set is saved, the PR line updates (e.g. “PR: 150 lb × 10”). No qualifying set: “No PR at this rep target yet.”</td>
+          </tr>
+          <tr>
+            <td>R7</td>
+            <td>First time this exercise has any logged sets in history: no next-set aim</td>
+            <td><span class="prio p0">P0</span></td>
+            <td>Copy states it is building knowledge; recommendations start the next time you do this exercise. No invented weight.</td>
+          </tr>
+          <tr>
+            <td>R8</td>
+            <td>Second-or-later time on this exercise: next-set aim as “{reps} reps at {weight} lb”</td>
+            <td><span class="prio p0">P0</span></td>
+            <td>After at least one prior session exists, a single aim line is visible for the upcoming set. Logging a different number still saves (override).</td>
+          </tr>
+          <tr>
+            <td>R9</td>
+            <td>Suggestion uses today + history + a progression calculation (not a chatbot)</td>
+            <td><span class="prio p0">P0</span></td>
+            <td>Hit the rep target → next aim holds or nudges load up a small step. Miss the target (e.g. 8 instead of 10) → same weight, target reps again. Last session missed a jump (owned 150×10, then 170×6) → next aim is a smaller step, not a repeat of 170.</td>
+          </tr>
+          <tr>
+            <td>R10</td>
+            <td>New sessions and sets persist in the browser</td>
+            <td><span class="prio p0">P0</span></td>
+            <td>Refresh after logging → the same session, sets, last time, and PR remain.</td>
+          </tr>
+          <tr>
+            <td>R11</td>
+            <td>Optional info control on the aim that shows one-line why</td>
+            <td><span class="prio p1">P1</span></td>
+            <td>Closed by default. Open → one short reason from the same calculation; no lecture on the main screen.</td>
+          </tr>
+          <tr>
+            <td>R12</td>
+            <td>Create or rename a session type</td>
+            <td><span class="prio p1">P1</span></td>
+            <td>Save a new type with a name and exercise list → it appears on the start list after refresh.</td>
+          </tr>
+          <tr>
+            <td>R13</td>
+            <td>Per-exercise history beyond last session (recent dates + top set)</td>
+            <td><span class="prio p1">P1</span></td>
+            <td>Open history for an exercise → at least the last 3 sessions that included it.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note">P0 = must ship for v1 · P1 = should · P2 = nice-to-have.</p>
+
+      <p><strong>Build order:</strong> 1) <code>data/session-types.json</code>, <code>data/exercises.json</code>, <code>data/sessions.json</code> + localStorage for new sessions/sets → 2) start session, log set, list sets (R1–R3, R10) → 3) last time, PR, swap (R4–R6) → 4) next-set aim rules (R7–R9). Do not add a database, OpenAI, or a third-party API.</p>
+
+      <h3>Explicitly not in v1</h3>
+      <ul>
+        <li>No accounts, sharing, or anyone else’s workouts.</li>
+        <li>No rest timers, video demos, RPE/RIR as required fields, body-comp, or nutrition.</li>
+        <li>No generated 12-week program and no locked routine you cannot swap.</li>
+        <li>No chat-style coach and no OpenAI — the aim is a number from <code>lib/</code> rules.</li>
+        <li>No native mobile app (responsive web is enough).</li>
+      </ul>
+    </section>
+
+    <section id="data">
+      <h2>5. Data Model</h2>
+      <p><strong>Persistence:</strong> seed in <code>data/*.json</code> · new items in localStorage · do not write JSON on the server · same field names if a shared database is added later.</p>
+      <ul>
+        <li><strong>Exercise</strong> — <code>data/exercises.json</code>. Fields: <code>id</code>, <code>name</code>, <code>target_reps</code> (integer, e.g. 10). Relates to: session types, sets.</li>
+        <li><strong>Session type</strong> — <code>data/session-types.json</code>. Fields: <code>id</code>, <code>name</code> (e.g. <code>"Push"</code>), <code>exercise_ids</code> (ordered). Relates to: exercises. Swapping on a live session does not rewrite the saved type in v1.</li>
+        <li><strong>Session</strong> — <code>data/sessions.json</code> (seed 2–3 past sessions so last time / PR / second-visit suggestions work on first run). New sessions in localStorage. Fields: <code>id</code>, <code>session_type_id</code>, <code>started_at</code>, <code>exercise_ids</code> (snapshot after swaps). Relates to: sets.</li>
+        <li><strong>Set</strong> — stored on the session as <code>sets[]</code>. Fields: <code>id</code>, <code>exercise_id</code>, <code>weight_lb</code>, <code>reps</code>, <code>logged_at</code>.</li>
+        <li><strong>Derived (not stored):</strong> <code>last_session_sets</code>, <code>pr_weight_lb</code> + <code>pr_reps</code>, <code>e1rm_lb</code> (Epley: <code>weight_lb * (1 + reps / 30)</code> — used only inside the suggestion), <code>next_aim</code> <code>{ reps, weight_lb, reason }</code>.</li>
+      </ul>
+      <p><strong>Example set:</strong> <code>{ "id": "s1", "exercise_id": "ex-bench", "weight_lb": 150, "reps": 10, "logged_at": "2026-09-10T18:04:00Z" }</code></p>
+    </section>
+
+    <section id="ux">
+      <h2>6. Guidance on User Experience</h2>
+      <ul>
+        <li><strong>Main user flow:</strong> 1) open app → session types → 2) start e.g. Push → 3) optional swap → 4) last time, PR, aim line (or learning copy) → 5) log weight + reps → 6) aim updates for the next set → 7) next exercise, then done.</li>
+        <li><strong>Error / empty states:</strong> Invalid log → inline error, stay on the form. First-time exercise → learning copy, log fields empty (no fake aim).</li>
+        <li><strong>Glanceability:</strong> Aim is the large line (<code>10 reps at 90 lb</code>). Last time and PR are secondary. Why is behind an info control (P1).</li>
+      </ul>
+    </section>
+
+    <section id="stack">
+      <h2>7. Guidance on Tech Stack / Components</h2>
+      <ul>
+        <li><strong>Stack:</strong> Next.js + React + Tailwind + shadcn/ui. Seed JSON + localStorage. Deploy on Vercel.</li>
+        <li><strong>Must-use:</strong> Product rules in <code>lib/</code> (validate set, merge seed + localStorage, PR, last session, next-aim calculation). Pages render; they do not own the math.</li>
+        <li><strong>Must-avoid:</strong> No OpenAI. No modal as the only way to log a set — log inline on the exercise.</li>
+      </ul>
+    </section>
+
+    <section id="other">
+      <h2>8. Other Info &amp; Open Questions</h2>
+      <ul>
+        <li><strong>Products I admire:</strong> Strong / Hevy for one-screen logging and last-time prefills; Fitbod for history-based load — without generating the whole workout.</li>
+      </ul>
+      <h3>Open questions</h3>
+      <ul>
+        <li><code>[ASSUMPTION]</code> Weight unit is lb only in v1.</li>
+        <li><code>[ASSUMPTION]</code> Small load step is 5 lb (2.5 lb if that would overshoot the PR).</li>
+        <li><code>[ASSUMPTION]</code> Swap is this session only; editing the saved session type is P1.</li>
+        <li><code>[ASSUMPTION]</code> PR uses reps ≥ target (a set of 11 at 155 counts as a 10-rep-target PR).</li>
+      </ul>
+    </section>
+  </article>
+</body>
+</html>
